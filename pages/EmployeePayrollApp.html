@@ -17,7 +17,7 @@
         - Use flex and CSS properties -->
     <header class="header-content header">
         <div class="logo-content">
-            <img src="../assets/images/logo.png" alt="logo">
+            <img src="../assets/images/logo.png" alt="">
             <div>
                 <span class="emp-text">EMPLOYEE</span></br>
                 <span class="emp-text emp-payroll">PAYROLL</span>
@@ -31,7 +31,7 @@
             <div class="form-head">Employee Payroll form</div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
-                <input class="input" type="text" id="name" name="name" placeholder="Your name..." required>
+                <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
                 <error-output class="text-error" for="text"></error-output>
             </div>
 
@@ -87,13 +87,13 @@
                 <label class="label text" for="salary">Choose your salary: </label>
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" 
                 step="100" value="400000">
-                <output class="salary—output text" for="salary-output">400000</output>
+                <output class="salary—output text" for="salary">400000</output>
             </div>
 
             <!-- Ability to specify the start date with Day, Month and Year as Select Input Item -->
             <div class="row-content">
                 <label class="label text" for="startDate">Start Date</label>
-                <div id="date">
+                <div>
                     <select id="day" name="Day">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -151,7 +151,7 @@
                         <option value="2016">2016</option>
                     </select>
                 </div>
-                <error-output class="date-error" for="startDate"></error-output>
+                <!-- <error-output class="date-error" for="startDate"></error-output> -->
             </div>
             <!-- Ability to add Notes as well as cancel, reset and submit button so as to do some action on form entry -->
             <div class="row-content">
